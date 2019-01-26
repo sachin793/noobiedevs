@@ -159,7 +159,8 @@
                   <!--  <h5>Price: Rs {{ allitems.item_price }}</h5> -->
                    <h6>Contact of person who found:{{ allitems.user_phone }}</h6>
                    <h7>Description: {{ allitems.about_item }}</h7><br>
-                   Gender: {{ allitems.item_tag }}
+                   Gender: {{ allitems.item_tag }}<br>
+                   <h7>Age: {{ allitems.user_email }}</h7>
                    </p>
                    <button name="delete" type="submit" value="delete"></button>
                   <a href="{% url 'delete_post' id=allitems.id %}"style="font-size: 25px">delete</a>
