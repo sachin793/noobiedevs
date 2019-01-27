@@ -14,6 +14,9 @@ from django.contrib.auth import logout
 from django.views.decorators.csrf import csrf_protect
 from django.views.generic import CreateView,TemplateView,ListView
 
+from django.views.decorators.cache import never_cache
+
+
 from .models import Items
 
 # Redirects to signup/login page
